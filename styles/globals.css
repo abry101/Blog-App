@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.text-base,
+.text-sm,
+.text-xs,
+p {
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.bg-gradient-1 {
+  color: #fff;
+  background: #fe4f70;
+  background: -webkit-linear-gradient(left, #fe4f70 0%, #ffa387 100%);
+  background: linear-gradient(to right, #fe4f70 0%, #ffa387 100%);
+}
+
+.smoothly-75 {
+  @apply delay-75 duration-150 ease-in-out;
+}
+
+.smoothly-100 {
+  @apply delay-100 duration-200 ease-in-out;
+}
+
+.smoothly {
+  @apply delay-150 duration-300 ease-in-out;
+}
+
+.nav-link {
+  @apply block py-2 px-6;
+}
+
+.nav-link-active {
+  @apply block py-2 px-6 bg-gradient-1 shadow-md shadow-base-content/25 rounded-full;
+}
+
+.btn-bg-gradient {
+  @apply bg-gradient-1 shadow-md shadow-base-content/25 rounded-full inline-flex items-center gap-x-1;
+}
+
+.h-sm {
+  height: 480px;
+}
+
+.h-md {
+  height: 540px;
+}
+.border-25 {
+  @apply border border-base-content/25;
+}
+
+.border-b-25 {
+  @apply border-b border-base-content/25;
+}
+
+.fb-border,
+.fb-border-to-l,
+.fb-border-to-r {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: stretch;
+  height: 1px;
+  white-space: nowrap;
+}
+
+.fb-border {
+  width: 100%;
+  @apply bg-gradient-to-r from-transparent via-base-content/50 to-transparent;
+}
+
+.fb-border-to-r:before {
+  width: 75%;
+  @apply bg-gradient-to-r from-base-content/50 to-transparent;
+}
+
+.fb-border-to-l:after {
+  width: 75%;
+  @apply bg-gradient-to-l from-base-content/50 to-transparent;
+}
+
+.fb-border-to-l:before,
+.fb-border-to-r:after {
+  width: 25%;
+}
+
+.fb-border-to-l:before,
+.fb-border-to-l:after,
+.fb-border-to-r:before,
+.fb-border-to-r:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+}

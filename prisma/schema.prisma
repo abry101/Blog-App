@@ -1,0 +1,110 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+datasource db {
+  provider = "postgresql"
+  url      = env("NEXT_PUBLIC_POSTGRES_DB_URL")
+  // shadowDatabaseUrl = env("NEXT_PUBLIC_SHADOW_DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  uid           String    @unique
+  name          String?
+  email         String    @unique
+  password      String
+  emailVerified Boolean   @default(false)
+  photoURL      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  role          Role      @default(USER)
+  profile       Profile?
+  posts         Post[]
+  comments      Comment[]
+  address       Address?
+}
+
+model Address {
+  id        Int      @id @default(autoincrement())
+  address_1 String
+  address_2 String?
+  city      String
+  state     String?
+  country   String   @default("Ethiopia")
+  zipcode   String   @default("1000")
+  lat       Decimal?
+  lng       Decimal?
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int      @unique
+}
+
+model Profile {
+  id          Int     @id @default(autoincrement())
+  bio         String?
+  phoneNumber String? @unique
+  user        User    @relation(fields: [userId], references: [id])
+  userId      Int     @unique
+}
+
+model Tag {
+  id    Int    @id @default(autoincrement())
+  name  String @unique @db.VarChar(50)
+  posts Post[]
+}
+
+model Category {
+  id             Int        @id @default(autoincrement())
+  name           String     @unique @db.VarChar(50)
+  parentCategory Category?  @relation("ParentCategory", fields: [parentId], references: [id])
+  posts          Post[]
+  subCategories  Category[] @relation("ParentCategory")
+  parentId       Int?
+}
+
+model Post {
+  id          Int       @id @default(autoincrement())
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  publishedAt DateTime?
+  published   Boolean   @default(false)
+  featured    Boolean   @default(false)
+  title       String    @db.VarChar(255)
+  body        String    @db.Text()
+  photoUrl    String?   @db.Text()
+  authorId    Int?
+  author      User?     @relation(fields: [authorId], references: [id])
+  tags        Tag[]
+  comments    Comment[]
+  categoryId  Int
+  category    Category  @relation(fields: [categoryId], references: [id])
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  userId    Int
+  postId    Int
+  comment   String   @db.Text()
+  post      Post     @relation(fields: [postId], references: [id])
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+// model Rating {
+//   id     Int  @id @default(autoincrement())
+//   userId Int
+//   postId Int
+//   rating Int
+//   user   User @relation(fields: [userId], references: [id])
+//   post   Post @relation(fields: [postId], references: [id])
+
+//   @@unique([userId, postId])
+// }

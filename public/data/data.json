@@ -1,0 +1,530 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "uid": "1234567890",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "password",
+      "emailVerified": true,
+      "photoUrl": "https://i.pravatar.cc/400?u=1",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z",
+      "role": "USER"
+    },
+    {
+      "id": 2,
+      "uid": "9876543210",
+      "name": "Jane Doe",
+      "email": "janedoe@example.com",
+      "password": "password",
+      "emailVerified": true,
+      "photoUrl": "https://i.pravatar.cc/400?u=2",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z",
+      "role": "USER"
+    },
+    {
+      "id": 3,
+      "uid": "1234567891",
+      "name": "John Smith",
+      "email": "johnsmith@example.com",
+      "password": "password",
+      "emailVerified": true,
+      "photoUrl": "https://i.pravatar.cc/400?u=3",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z",
+      "role": "USER"
+    },
+    {
+      "id": 4,
+      "uid": "9876543211",
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "password": "password",
+      "emailVerified": true,
+      "photoUrl": "https://i.pravatar.cc/400?u=4",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z",
+      "role": "USER"
+    },
+    {
+      "id": 5,
+      "uid": "1234567892",
+      "name": "John Doe II",
+      "email": "johndoe2@example.com",
+      "password": "password",
+      "emailVerified": true,
+      "photoUrl": "https://i.pravatar.cc/400?u=5",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z",
+      "role": "USER"
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "bio": "I'm John Doe, a software engineer by day and a writer by night. I love to travel and explore new cultures.",
+      "phoneNumber": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "bio": "I'm Jane Doe, a stay-at-home mom and a passionate baker. I love to spend time with my family and friends and I'm always up for a new adventure.",
+      "phoneNumber": "987-654-3210"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "bio": "I'm John Smith, a student at the University of Addis Ababa. I'm majoring in computer science and I'm passionate about using technology to solve social problems.",
+      "phoneNumber": "123-456-7891"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "bio": "I'm Jane Smith, a teacher at the local elementary school. I love working with kids and I'm always looking for new ways to make learning fun.",
+      "phoneNumber": "987-654-3211"
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "bio": "I'm John Doe II, a professional gamer. I'm passionate about gaming and I'm always looking for new challenges.",
+      "phoneNumber": "123-456-7892"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "technology"
+    },
+    {
+      "id": 2,
+      "name": "travel"
+    },
+    {
+      "id": 3,
+      "name": "food"
+    },
+    {
+      "id": 4,
+      "name": "music"
+    },
+    {
+      "id": 5,
+      "name": "art"
+    },
+    {
+      "id": 6,
+      "name": "fashion"
+    },
+    {
+      "id": 7,
+      "name": "business"
+    },
+    {
+      "id": 8,
+      "name": "science"
+    },
+    {
+      "id": 9,
+      "name": "politics"
+    },
+    {
+      "id": 10,
+      "name": "sports"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Technology"
+    },
+    {
+      "id": 2,
+      "name": "Travel"
+    },
+    {
+      "id": 3,
+      "name": "Food"
+    },
+    {
+      "id": 4,
+      "name": "Entertainment"
+    },
+    {
+      "id": 5,
+      "name": "Lifestyle"
+    },
+    {
+      "id": 6,
+      "name": "Software",
+      "parentId": 1
+    },
+    {
+      "id": 7,
+      "name": "AI",
+      "parentId": 1
+    },
+    {
+      "id": 8,
+      "name": "Music",
+      "parentId": 4
+    },
+    {
+      "id": 9,
+      "name": "Weather",
+      "parentId": 2
+    },
+    {
+      "id": 10,
+      "name": "Hotels",
+      "parentId": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "My First Post",
+      "body": "This is my first post on the blog. I'm excited to share my thoughts and experiences with you.",
+      "photoUrl": "https://fastly.picsum.photos/id/718/1920/1080.jpg?hmac=U_XwyZvotGPUeuuUxEzeQjBX9NxAVSeLtA9drKPs1WQ",
+      "authorId": 1,
+      "tags": ["technology", "blog"],
+      "categoryId": 1,
+      "published": false,
+      "featured": false,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 2,
+      "title": "My Travels to Ethiopia",
+      "body": "I recently traveled to Ethiopia and had an amazing time. I visited the ancient city of Lalibela, the Simien Mountains, and the Danakil Depression.",
+      "photoUrl": "https://fastly.picsum.photos/id/341/1920/1080.jpg?hmac=lsfmy4KAcUA472MYlvdKtpLuTEnxr-n5r8-mEwHarSg",
+      "authorId": 2,
+      "tags": ["travel", "ethiopia"],
+      "categoryId": 2,
+      "published": true,
+      "featured": false,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 3,
+      "title": "The Best Ethiopian Food I've Ever Had",
+      "body": "I'm a big fan of Ethiopian food, and I recently had the best meal I've ever had at a restaurant in Addis Ababa. The injera was so soft and spongy, and the berbere was perfectly spiced.",
+      "photoUrl": "https://fastly.picsum.photos/id/111/1920/1080.jpg?hmac=Am4tE7hXj7jd_-ukxXCGJCPy0RpOhezIxyEkLviMfP4",
+      "authorId": 3,
+      "tags": ["food", "ethiopia"],
+      "categoryId": 3,
+      "published": true,
+      "featured": true,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 4,
+      "title": "My New Favorite Music Album",
+      "body": "I just listened to the new album by my favorite band, and I'm obsessed. The songs are so catchy, and the lyrics are really meaningful.",
+      "photoUrl": "https://fastly.picsum.photos/id/536/1920/1080.jpg?hmac=0SvJdXR7p_sAwWgkPv3yenH_d0eLLGIF92N_e3PLxKA",
+      "authorId": 4,
+      "tags": ["music", "album"],
+      "categoryId": 4,
+      "published": true,
+      "featured": false,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 5,
+      "title": "My Latest Artwork",
+      "body": "I'm a painter, and I recently finished a new painting. I'm really happy with how it turned out, and I'm excited to share it with the world.",
+      "photoUrl": "https://fastly.picsum.photos/id/127/1920/1080.jpg?hmac=tUwxvd6-glVoeBPFwke9_OgXuiRXo6nkorjL4pcBU94",
+      "authorId": 5,
+      "tags": ["art", "painting"],
+      "categoryId": 5,
+      "published": true,
+      "featured": false,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 6,
+      "title": "How to Make the Perfect Ethiopian Coffee",
+      "body": "Ethiopian coffee is some of the best in the world, and it's actually really easy to make at home. Here's my recipe for the perfect Ethiopian coffee.",
+      "photoUrl": "https://fastly.picsum.photos/id/29/1920/1080.jpg?hmac=yIS4ioWkrbDiwLQukdvdRsQYeKxq80_5asN-vJbibEs",
+      "authorId": 1,
+      "tags": ["food", "coffee", "ethiopia"],
+      "categoryId": 3,
+      "published": true,
+      "featured": false,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 7,
+      "title": "The Best Places to Visit in Ethiopia",
+      "body": "Ethiopia is a beautiful country with a rich history and culture. Here are some of the best places to visit in Ethiopia.",
+      "photoUrl": "https://fastly.picsum.photos/id/210/1920/1080.jpg?hmac=X0F_30YoA5wgQtzKE2LRARvUoYz_ENaXDo1R6VOzMZo",
+      "authorId": 2,
+      "tags": ["travel", "ethiopia"],
+      "categoryId": 2,
+      "published": true,
+      "featured": true,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 8,
+      "title": "The Future of Technology",
+      "body": "Technology is constantly changing, and it's hard to predict what the future holds. However, there are a few trends that I think are worth paying attention to.",
+      "photoUrl": "https://fastly.picsum.photos/id/234/1920/1080.jpg?hmac=7tXNGeu3tSgYvak5RaJ05GoYon6e8aPHnsTxczHzwP0",
+      "authorId": 3,
+      "tags": ["technology", "future"],
+      "categoryId": 1,
+      "published": true,
+      "featured": false,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 9,
+      "title": "How to Start Your Own Blog",
+      "body": "Starting your own blog is a great way to share your thoughts and ideas with the world. Here's a step-by-step guide on how to get started.",
+      "photoUrl": "https://fastly.picsum.photos/id/991/1920/1080.jpg?hmac=W8uuMx_7lllIVi2hAu3bhiIhJI2BNAgbMZYWWP7SoUA",
+      "authorId": 4,
+      "tags": ["blogging", "guide"],
+      "categoryId": 4,
+      "published": true,
+      "featured": true,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 10,
+      "title": "The Best Ethiopian Restaurants in Addis Ababa",
+      "body": "Addis Ababa is a city with a rich culinary tradition. Here are some of the best Ethiopian restaurants in Addis Ababa.",
+      "photoUrl": "https://fastly.picsum.photos/id/800/1920/1080.jpg?hmac=sqMVscBqq6SVSCIIbFHXUoGmglbd3BWF0M1LHtToR3o",
+      "authorId": 5,
+      "tags": ["food", "ethiopia", "addis-ababa"],
+      "categoryId": 3,
+      "published": true,
+      "featured": false,
+      "publishedAt": "2023-07-14T06:10:00Z",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "authorId": 2,
+      "body": "Great post! I really enjoyed reading about your first post on the blog. I'm excited to see what you write next.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "authorId": 3,
+      "body": "I'm so jealous of your travels! I've always wanted to go to Ethiopia. Your photos are amazing.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 3,
+      "postId": 3,
+      "authorId": 4,
+      "body": "I've never had Ethiopian food before, but your post makes me want to try it. Thanks for the recommendation!",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 4,
+      "postId": 4,
+      "authorId": 5,
+      "body": "I love your new music album! I've been listening to it on repeat all week.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 5,
+      "postId": 5,
+      "authorId": 1,
+      "body": "Thank you for the kind words! I'm glad you enjoyed my latest artwork.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 6,
+      "postId": 6,
+      "authorId": 2,
+      "body": "This is such a helpful post! I've always wanted to learn how to make Ethiopian coffee, and now I know how.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 7,
+      "postId": 7,
+      "authorId": 3,
+      "body": "I've been to Ethiopia a few times, and I can vouch for this list. These are some of the best places to visit in Ethiopia.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 8,
+      "postId": 8,
+      "authorId": 4,
+      "body": "I'm really excited about the future of technology. I think there are some amazing things that are going to happen in the years to come.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 9,
+      "postId": 9,
+      "authorId": 5,
+      "body": "This is a great guide on how to start your own blog. I'm definitely going to give it a try.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 10,
+      "postId": 10,
+      "authorId": 1,
+      "body": "I've never been to Addis Ababa, but these restaurants look amazing. I'm definitely going to have to try them out if I ever get the chance.",
+      "createdAt": "2023-07-14T06:10:00Z",
+      "updatedAt": "2023-07-14T06:10:00Z"
+    },
+    {
+      "id": 11,
+      "postId": 1,
+      "authorId": 1,
+      "body": "Thanks for the feedback! I'm glad you enjoyed my post. I'm always looking for ways to improve my writing, so I'll definitely take your suggestions into consideration.",
+      "createdAt": "2023-07-15T06:10:00Z",
+      "updatedAt": "2023-07-15T06:10:00Z"
+    },
+    {
+      "id": 12,
+      "postId": 2,
+      "authorId": 2,
+      "body": "I'm so glad you enjoyed my photos! I took them myself, and I'm really proud of them. I'm planning on taking more photos of my travels in the future, so stay tuned!",
+      "createdAt": "2023-07-15T06:10:00Z",
+      "updatedAt": "2023-07-15T06:10:00Z"
+    },
+    {
+      "id": 13,
+      "postId": 3,
+      "authorId": 3,
+      "body": "I'm so glad you're interested in trying Ethiopian food! It's one of my favorite cuisines. If you're ever in Addis Ababa, be sure to check out some of the local restaurants. You won't be disappointed.",
+      "createdAt": "2023-07-15T06:10:00Z",
+      "updatedAt": "2023-07-15T06:10:00Z"
+    },
+    {
+      "id": 14,
+      "postId": 4,
+      "authorId": 4,
+      "body": "I'm so glad you like my music! I've been working really hard on it, so it's great to hear that you're enjoying it. I'm planning on releasing more music in the future, so stay tuned!",
+      "createdAt": "2023-07-15T06:10:00Z",
+      "updatedAt": "2023-07-15T06:10:00Z"
+    },
+    {
+      "id": 15,
+      "postId": 5,
+      "authorId": 5,
+      "body": "Thank you for the kind words! I'm glad you enjoyed my artwork. I'm always working on new pieces, so be sure to check back soon!",
+      "createdAt": "2023-07-15T06:10:00Z",
+      "updatedAt": "2023-07-15T06:10:00Z"
+    },
+    {
+      "id": 16,
+      "postId": 1,
+      "authorId": 6,
+      "body": "I really enjoyed your post about your first blog post. It was inspiring to read about your journey so far. Keep up the good work!",
+      "createdAt": "2023-07-16T06:10:00Z",
+      "updatedAt": "2023-07-16T06:10:00Z"
+    },
+    {
+      "id": 17,
+      "postId": 2,
+      "authorId": 7,
+      "body": "Your photos are absolutely stunning! I can't wait to see more of your travels.",
+      "createdAt": "2023-07-16T06:10:00Z",
+      "updatedAt": "2023-07-16T06:10:00Z"
+    },
+    {
+      "id": 18,
+      "postId": 3,
+      "authorId": 8,
+      "body": "I've never tried Ethiopian food before, but your post has me really curious. I'll have to check it out soon!",
+      "createdAt": "2023-07-16T06:10:00Z",
+      "updatedAt": "2023-07-16T06:10:00Z"
+    },
+    {
+      "id": 19,
+      "postId": 4,
+      "authorId": 9,
+      "body": "Your music is so catchy! I've been listening to it on repeat all day.",
+      "createdAt": "2023-07-16T06:10:00Z",
+      "updatedAt": "2023-07-16T06:10:00Z"
+    },
+    {
+      "id": 20,
+      "postId": 5,
+      "authorId": 10,
+      "body": "Your artwork is incredible! I love the way you use color and texture.",
+      "createdAt": "2023-07-16T06:10:00Z",
+      "updatedAt": "2023-07-16T06:10:00Z"
+    },
+    {
+      "id": 21,
+      "postId": 6,
+      "authorId": 1,
+      "body": "I'm so glad you enjoyed my post about how to make Ethiopian coffee. It's one of my favorite recipes.",
+      "createdAt": "2023-07-17T06:10:00Z",
+      "updatedAt": "2023-07-17T06:10:00Z"
+    },
+    {
+      "id": 22,
+      "postId": 7,
+      "authorId": 2,
+      "body": "I've been to Ethiopia a few times, and I can definitely vouch for the places you listed. They're some of the best in the country.",
+      "createdAt": "2023-07-17T06:10:00Z",
+      "updatedAt": "2023-07-17T06:10:00Z"
+    },
+    {
+      "id": 23,
+      "postId": 8,
+      "authorId": 3,
+      "body": "I'm really excited about the future of technology, too. I think there are some amazing things that are going to happen in the next few years.",
+      "createdAt": "2023-07-17T06:10:00Z",
+      "updatedAt": "2023-07-17T06:10:00Z"
+    },
+    {
+      "id": 24,
+      "postId": 9,
+      "authorId": 4,
+      "body": "I'm so glad you enjoyed my guide to starting your own blog. I hope it helps you get started on your own blogging journey.",
+      "createdAt": "2023-07-17T06:10:00Z",
+      "updatedAt": "2023-07-17T06:10:00Z"
+    },
+    {
+      "id": 25,
+      "postId": 10,
+      "authorId": 5,
+      "body": "I'm so glad you enjoyed my artwork. I'm always working on new pieces, so be sure to check back soon!",
+      "createdAt": "2023-07-17T06:10:00Z",
+      "updatedAt": "2023-07-17T06:10:00Z"
+    }
+  ]
+}

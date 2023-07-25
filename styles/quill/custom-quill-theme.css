@@ -1,0 +1,15 @@
+.ql-editor * {
+  @apply text-base-content !important; /* Set your desired text color here */
+}
+.ql-editor:before,
+.ql-editor:after {
+  @apply text-base-content !important; /* Set your desired text color here */
+}
+.ql-editor {
+  @apply bg-base-content/20; /* Set your desired background color here */
+}
+
+.ql-formats *[class*="ql-"] {
+  @apply text-base-content; /* Set your desired text color here */
+  @apply stroke-base-content; /* Set your desired text color here */
+}
